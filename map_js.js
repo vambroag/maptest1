@@ -14,43 +14,43 @@ function initMap() {
   const features = [
     {
       position: new google.maps.LatLng(37.559349, 126.9773777),
-      icon: meat,
+      icon: new google.maps.MarkerImage("./testmapmarkerimg/meat.png"),
     },
     {
       position: new google.maps.LatLng(37.559279, 126.977434),
-      icon: meat,
+      icon: new google.maps.MarkerImage("./testmapmarkerimg/meat.png"),
     },
     {
       position: new google.maps.LatLng(37.5592515, 126.9773701),
-      icon: meat,
+      icon: new google.maps.MarkerImage("./testmapmarkerimg/meat.png"),
     },
     {
       position: new google.maps.LatLng(37.5592209, 126.9774115),
-      icon: meat,
+      icon: new google.maps.MarkerImage("./testmapmarkerimg/meat.png"),
     },
     {
       position: new google.maps.LatLng(37.5590489, 126.9777508),
-      icon: meat,
+      icon: new google.maps.MarkerImage("./testmapmarkerimg/meat.png"),
     },
     {
       position: new google.maps.LatLng(37.559114, 126.9774099),
-      icon: fish,
+      icon: new google.maps.MarkerImage("./testmapmarkerimg/fish.png"),
     },
     {
       position: new google.maps.LatLng(37.5590981, 126.9774544),
-      icon: fish,
+      icon: new google.maps.MarkerImage("./testmapmarkerimg/fish.png"),
     },
     {
       position: new google.maps.LatLng(37.5590159, 126.9775489),
-      icon: fish,
+      icon: new google.maps.MarkerImage("./testmapmarkerimg/fish.png"),
     },
     {
       position: new google.maps.LatLng(37.5592445, 126.977774),
-      icon: fish,
+      icon: new google.maps.MarkerImage("./testmapmarkerimg/fish.png"),
     },
     {
       position: new google.maps.LatLng(37.5591502, 126.9775453),
-      icon: restaurant,
+      icon: new google.maps.MarkerImage("./testmapmarkerimg/restaurant.png"),
     },
   ];
 
