@@ -7,55 +7,50 @@ function initMap() {
     mapId: '31889289191ab1d3'
   });
 
-  const meat = 
-    "./testmapmarkerimg/축산.png";
-
-  const fish = 
-    "./testmapmarkerimg/수산.png";
-
-  const restaurant = 
-    "./testmapmarkerimg/음식.png";
+  let meat = new google.maps.MarkerImage("./testmapmarkerimg/meat.png");
+  let fish = new google.maps.MarkerImage("./testmapmarkerimg/fish.png");
+  let restaurant = new google.maps.MarkerImage("./testmapmarkerimg/restaurant.png");
 
   const features = [
     {
       position: new google.maps.LatLng(37.559349, 126.9773777),
-      content: meat,
+      icon: meat,
     },
     {
       position: new google.maps.LatLng(37.559279, 126.977434),
-      content: meat,
+      icon: meat,
     },
     {
       position: new google.maps.LatLng(37.5592515, 126.9773701),
-      content: meat,
+      icon: meat,
     },
     {
       position: new google.maps.LatLng(37.5592209, 126.9774115),
-      content: meat,
+      icon: meat,
     },
     {
       position: new google.maps.LatLng(37.5590489, 126.9777508),
-      content: meat,
+      icon: meat,
     },
     {
       position: new google.maps.LatLng(37.559114, 126.9774099),
-      content: fish,
+      icon: fish,
     },
     {
       position: new google.maps.LatLng(37.5590981, 126.9774544),
-      content: fish,
+      icon: fish,
     },
     {
       position: new google.maps.LatLng(37.5590159, 126.9775489),
-      content: fish,
+      icon: fish,
     },
     {
       position: new google.maps.LatLng(37.5592445, 126.977774),
-      content: fish,
+      icon: fish,
     },
     {
       position: new google.maps.LatLng(37.5591502, 126.9775453),
-      content: restaurant,
+      icon: restaurant,
     },
   ];
 
@@ -63,7 +58,7 @@ function initMap() {
   for (let i = 0; i < features.length; i++) {
     const marker = new google.maps.Marker({
       position: features[i].position,
-      icon: features[i].content.icon,
+      icon: features[i].icon,
       map: map,
     });
   }
