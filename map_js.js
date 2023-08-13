@@ -61,6 +61,8 @@ function initMap() {
       icon: features[i].icon,
       map: map,
     });
+    
+    marker.setMap(map);
   }
 }
 
